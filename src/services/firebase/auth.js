@@ -32,7 +32,7 @@ function singup(params){
         const user = userCredential.user;
         database.collection("profiles").doc(user.uid).set({
           email:user.email,
-          uid:user.uid
+          uid:user.uid,
           displayname,
         })
     })

@@ -26,7 +26,10 @@ function Login() {
     }
 
     return (
-        <div className="container">
+        <div className="container" style={{
+            display:"flex",
+            flexDirection:"column"
+        }}>
             <input onChange={onChange} name="email" type="text" value={state.email} />
             <input onChange={onChange} name="password" type="password" value={state.password} />
             <button onClick={onLogin}>Login</button>
